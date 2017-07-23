@@ -1,2 +1,2 @@
 
-eval(fs.readFileSync('./263-ugly-number.js').toString());
+eval(fs.readFileSync('./433-minimum-genetic-mutation.js').toString());
