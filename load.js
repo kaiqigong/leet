@@ -1,2 +1,2 @@
 
-eval(fs.readFileSync('./433-minimum-genetic-mutation.js').toString());
+eval(fs.readFileSync('./636-exclusive-time-of-functions.js').toString());
