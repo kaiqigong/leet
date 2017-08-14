@@ -15,7 +15,6 @@ var findTarget = function(root, k) {
     return false;
   }
   var sortedArr = [];
-  var queue = [];
   var build = function(node) {
     if (node.left) {
       build(node.left);
