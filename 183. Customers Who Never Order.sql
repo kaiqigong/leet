@@ -1,4 +1,4 @@
-SELECT Customers.Name as Customers FROM Customers C
+SELECT C.Name as Customers FROM Customers C
 LEFT JOIN Orders
 ON C.Id = Orders.CustomerId
 WHERE
