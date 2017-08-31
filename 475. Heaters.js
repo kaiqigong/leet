@@ -7,6 +7,8 @@ var binarySearch = function(arr, target) {
   var start = 0;
   var end = arr.length - 1;
   var mid;
+  if (target < arr[start]) return start;
+  if (target > arr[end]) return end;
   while (end - start > 1) {
     mid = Math.ceil((start + end) / 2);
     if (target > arr[mid]) {
@@ -31,8 +33,8 @@ var findRadius = function(houses, heaters) {
   return result;
 }
 
-console.log(findRadius([1,2,3],[2]))
-console.log(findRadius([1,2,3,4], [1,4]))
-console.log(findRadius([1,2,3,4,9], [1,4]))
-console.log(findRadius([1,5], [10]));
-console.log(findRadius([617819336,399125485,156091745,356425228], [585640194,937186357]));
+// console.log(findRadius([1,2,3],[2]))
+// console.log(findRadius([1,2,3,4], [1,4]))
+// console.log(findRadius([1,2,3,4,9], [1,4]))
+// console.log(findRadius([1,5], [10]));
+console.log(findRadius([61,39,15,35], [58,93]));
